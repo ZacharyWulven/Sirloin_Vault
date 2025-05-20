@@ -62,8 +62,16 @@ jobs:
         env:
           JEKYLL_ENV: "production"
 
+      - name: Prepare HTML-Proofer script
+        run: |
+          chmod +x check.rb
+          cat check.rb
+
       - name: Test site
-        run: ruby check.rb
+        run: |
+          ruby -v
+          gem list html-proofer
+          ./check.rb
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
