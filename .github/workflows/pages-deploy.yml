@@ -44,6 +44,16 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true
 
+      - name: Verify Ruby and Gem Installation
+        run: |
+          ruby -v
+          gem -v
+          gem list
+          cat Gemfile
+
+      - name: Install HTML-Proofer
+        run: gem install html-proofer -v "~> 5.0"
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
