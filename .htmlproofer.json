@@ -1,0 +1,9 @@
+{
+  "disable_external": true,
+  "ignore_urls": [
+    "/^http:\\/\\/127\\.0\\.0\\.1/",
+    "/^http:\\/\\/0\\.0\\.0\\.0/",
+    "/^http:\\/\\/localhost/",
+    "/^\\/Sirloin_Vault/"
+  ]
+} 
