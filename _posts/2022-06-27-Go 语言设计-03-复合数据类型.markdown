@@ -993,7 +993,7 @@ $ ./issuehtml repo:golang/go 7872 7767 >issues2.html
 {% endhighlight %}
 
 
-如果我们错误的使用了 text/template 包，那么字符串”&lt“将会被当做小于号"<"，而字符串 ”<link>“ 将变成一个 link 元素，
+如果我们错误的使用了 text/template 包，那么字符串”&lt“将会被当做小于号`<`，而字符串 `<link>` 将变成一个 `link` 元素，
 这将改变 HTML 文档结构，甚至有可能产生安全问题。
 
 我们可以使用 template.HTML 类型而不是字符串类型避免模板自动转义受信任的 JavaScript、CSS、URL
