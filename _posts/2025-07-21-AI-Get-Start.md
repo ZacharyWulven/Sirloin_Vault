@@ -1,9 +1,9 @@
 ---
 layout: post
-title: AI-Get-Start
+title: 01-AI 大模型基本原理及 API 使用
 date: 2025-07-11 16:45:30.000000000 +09:00
-categories: [AI]
-tags: [AI]
+categories: [AI, AIStarted]
+tags: [AI, AIStarted]
 ---
 
 
